@@ -1,5 +1,5 @@
 from PyQt6.QtCore import QThread, pyqtSignal
-from mft.forensics.extraction_module import ExtractionModule
+from auraforensic.forensics.extraction_module import ExtractionModule
 
 class SpecialistWorker(QThread):
     finished = pyqtSignal(str, list)
@@ -41,8 +41,8 @@ class TorScoutWorker(QThread):
         self.filepath = filepath
 
     def run(self):
-        from mft.forensics.vol_engine import VolatilityEngine
-        from mft.forensics.tor_module import TorAnalyzer
+        from auraforensic.forensics.vol_engine import VolatilityEngine
+        from auraforensic.forensics.tor_module import TorAnalyzer
         
         try:
             engine = VolatilityEngine(self.filepath, progress_callback=lambda p, d: self.progress.emit(p, d))

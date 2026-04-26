@@ -1,5 +1,5 @@
 from PyQt6.QtCore import QThread, pyqtSignal
-from mft.forensics.vol_engine import VolatilityEngine
+from auraforensic.forensics.vol_engine import VolatilityEngine
 
 class VadCacheWorker(QThread):
     finished = pyqtSignal(list)

@@ -72,7 +72,7 @@ AuraForensics currently exclusively supports the **Google Gemini API** for intel
 To launch the Forensic Suite:
 
 ```bash
-python -m mft.main
+python -m auraforensic.main
 ```
 
 ### Typical Workflow
@@ -96,7 +96,7 @@ python -m mft.main
 
 ## 🆘 Troubleshooting
 
-- **ModuleNotFoundError (mft.xxx)**: Ensure you are running the tool with `python -m mft.main` from the project root.
+- **ModuleNotFoundError (mft.xxx)**: Ensure you are running the tool with `python -m auraforensic.main` from the project root.
 - **Volatility Layer Failure**: Verify your symbol server configuration or ensure you are using a supported Windows memory image.
 - **AI Analyst Timeout**: Check your internet connection and ensure your Gemini API key has sufficient quota.
 

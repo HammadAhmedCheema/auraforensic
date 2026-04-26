@@ -1,13 +1,13 @@
 from PyQt6.QtCore import pyqtSignal
 from PyQt6.QtWidgets import QMainWindow, QWidget, QVBoxLayout, QTabWidget
-from mft.views.dashboard import DashboardWidget
-from mft.views.ai_analyst_view import AIAnalystViewWidget
-from mft.views.graph_view import GraphViewWidget
-from mft.views.tor_view import TorEvidenceWidget
-from mft.views.styles import get_stylesheet
-from mft.views.base_forensic_view import BaseForensicView
-from mft.views.extraction_view import ExtractionWidget
-from mft.constants.plugin_map import TAB_CONFIG
+from auraforensic.views.dashboard import DashboardWidget
+from auraforensic.views.ai_analyst_view import AIAnalystViewWidget
+from auraforensic.views.graph_view import GraphViewWidget
+from auraforensic.views.tor_view import TorEvidenceWidget
+from auraforensic.views.styles import get_stylesheet
+from auraforensic.views.base_forensic_view import BaseForensicView
+from auraforensic.views.extraction_view import ExtractionWidget
+from auraforensic.constants.plugin_map import TAB_CONFIG
 from PyQt6.QtWidgets import QProgressBar, QLabel
 
 class MainWindow(QMainWindow):
